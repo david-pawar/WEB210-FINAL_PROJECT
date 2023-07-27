@@ -1,0 +1,255 @@
+/* 
+Name: David Pawar
+Id: 0800287
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 9px;
+}
+
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  background-color: #fffef5;
+  line-height: 1.5;
+  overflow-x: hidden;
+  margin: 0; 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+.chirp_logo {
+  color: #1da1f2;
+  font-size: 3.2rem;
+  font-weight: 650;
+}
+.navbar {
+  max-width: min(90%, 110rem);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 3.3rem;
+
+}
+.navbar .nav_links {
+  display: flex;
+
+}
+.navbar .nav_links li {
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+}
+.navbar .nav_inks li .nav_link {
+  color: #787878;
+  font-weight: 300;
+}
+.navbar .svg_hamburger {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  padding-block: 5.0rem;
+}
+
+p {
+  color: #787878;
+  font-weight: 300;
+  margin-block: 1.6rem;
+}
+
+.container {
+  max-width: min(90%, 120rem);
+  margin: 0 auto;
+}
+
+.bird_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1da1f2;
+  color: #fff !important;
+  padding: 1rem 2rem;
+  border-radius: 7px;
+  transition: opacity 0.5s ease;
+}
+
+.bird_btn:hover {
+  opacity: 0.6;
+}
+
+.bird_btn span {
+  font-weight: 620;
+  margin-left: 1rem;
+}
+
+/* FAQ styles */
+.faq {
+  padding: 0;
+  margin: 0;
+}
+
+.faq .container {
+  max-width: min(90%, 120rem);
+  margin: 0 auto;
+}
+
+.faq .main_heading {
+  font-size: 3rem;
+  font-weight: 600;
+  max-width: 40rem;
+  line-height: 1.5;
+  margin-bottom: 3.5rem;
+}
+
+.faq_item {
+  margin-bottom: 2rem;
+}
+
+.faq_item .question {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1da1f2;
+  cursor: pointer;
+}
+
+.faq_item .answer {
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-top: 1rem;
+  display: none;
+}
+
+.faq_item.active .answer {
+  display: block;
+}
+
+.main_heading {
+  border-left: 7px solid #1da1f2;
+  padding-left: 10px;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #d7f5f5;
+  margin-top: auto;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 2rem;
+}
+
+.footer .container .footer_list {
+  display: flex;
+}
+
+.footer .container .footer_list li {
+  margin-left: 3rem;
+}
+
+.footer .container .footer_list li .footer-link {
+  color: #000;
+  font-weight: 300;
+  transition: color 0.3s ease;
+}
+
+.footer .container .footer_list li .footer_link:hover {
+  color: #1da1f2;
+}
+
+.answer {
+  border-left: 3px solid #1da1f2;
+  padding-left: 10px;
+  background-color: #ddeef8;
+}
+
+.faq_item #q10 {
+  color: #0f72b0;
+}
+
+/* Responsive styles */
+@media (max-width: 750px) {
+  .faq .container {
+    padding-inline: 2rem;
+  }
+
+  .faq .main_heading {
+    font-size: 2.5rem;
+    max-width: none;
+  }
+
+  .navbar {
+    position: relative;
+  }
+
+  .navbar .nav_links {
+    background-color: #fff;
+    position: absolute;
+    top: 7rem;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    box-shadow: 0 1rem 2rem -1px rgba(0, 0, 0, 0.1);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  .navbar .nav_links li {
+    margin-block: 1.6rem;
+  }
+
+  .navbar .nav_links.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .navbar .svg_hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .footer .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer .container .footer_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .footer .container .footer_list li {
+    margin: 0.5rem;
+  }
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Pawar</title>
+    <link rel="stylesheet" href="css/faq.css">
+    <script src="JS/faq.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="Index.html" class="chirp_logo"><i>Chirp.</i></a>
+      <ul class="nav_links">
+        <li><a href="Index.html" class="nav_link">Home</a></li>
+        <li><a href="#" class="nav_link">Pricing</a></li>
+        <li><a href="FAQ.html" class="nav_link">FAQ</a></li>
+        <li>
+          <a href="#" class="nav_link bird_btn"
+            ><img src="Assets/Twitter.svg" alt="" /><span
+              >Sign in with Twitter</span
+            ></a
+          >
+        </li> 
+      </ul>
+
+      <div class="svg_hamburger">
+        <img src="Assets/Hamburger Menu.svg" alt="Menu" />
+      </div>
+    </nav>
+  </header>
+  
+    <main>
+        <section class="faq">
+          <div class="container">
+            <h3 class="main_heading">Frequently Asked Questions</h3>
+            <div class="accordion">
+              <div class="faq_item">
+                <h4 class="question" id="q1" onclick="toggleAnswer(1)">What is Chirp?</h4>
+                <div class="answer" id="a1">
+                  Chirp is a suite of Twitter analytics that will help you better understand your audience, which tweets they like, and most importantly, when they are the most active on Twitter.
+                </div>
+              </div>
+              <div class="faq_item">
+                <h4 class="question" id="q2" onclick="toggleAnswer(2)">How can I sign in with Twitter?</h4>
+                <div class="answer"  id="a2">
+                  To sign in with Twitter, click on the "Sign in with Twitter" button on the top navigation bar. You will be redirected to Twitter's authorization page to grant Chirp access to your Twitter account.
+                </div>
+              </div>
+              <div class="faq_item">
+                <h4 class="question" id="q3" onclick="toggleAnswer(3)">Is Chirp available on mobile devices?</h4>
+                <div class="answer"  id="a3">
+                  Yes, Chirp is accessible on all modern mobile devices. You can access it through your mobile browser and enjoy all the features just like on the desktop.
+                </div>
+              </div>
+              <div class="faq_item">
+                <h4 class="question" id="q4" onclick="toggleAnswer(4)">How often is the data updated in Chirp?</h4>
+                <div class="answer"  id="a4">
+                  Chirp updates the data in real-time, so you'll always have the latest insights into your Twitter account's performance and your audience's activity.
+                </div>
+              </div>
+              <div class="faq_item">
+                <h4 class="question" id="q5" onclick="toggleAnswer(5)">Can I schedule tweets using Chirp?</h4>
+                <div class="answer"  id="a5">
+                  Absolutely! With Chirp, you can write and schedule tweets in advance, ensuring they are posted at the optimal times for your audience engagement.
+                </div>
+              </div>
+              <div class="faq_item">
+                <h4 class="question" id="q6" onclick="toggleAnswer(6)">How do I report inappropriate content or users?</h4>
+                <div class="answer" id="a6">
+                  To report inappropriate content or users on Twitter, go to the tweet or profile in question and click on the three-dot menu icon. From there, select the "Report" option and follow the on-screen instructions to submit your report.
+                </div>
+              </div>
+              <div class="faq_item">
+                <h4 class="question" id="q7" onclick="toggleAnswer(7)">How do I reset my password?</h4>
+                <div class="answer" id="a7">
+                  To reset your password, go to the login page and click on the "Forgot Password" link. You'll receive an email with instructions on how to reset your password.
+                </div>
+              </div>
+              <div class="faq_item">
+                <h4 class="question" id="q8" onclick="toggleAnswer(8)">Can I change my username?</h4>
+                <div class="answer" id="a8">
+                  Yes, you can change your username. Go to your account settings, and there should be an option to edit your username. Keep in mind that once changed, your previous username may become available to other users.
+                </div>
+              </div>
+              <div class="faq_item">
+                <h4 class="question" id="q9" onclick="toggleAnswer(9)">Is there a limit to the number of chirps I can post in a day?</h4>
+                <div class="answer" id="a9">
+                  Chirp does not impose a limit on the number of chirps (tweets) you can post in a day. However, Twitter itself may have certain posting limits and restrictions. Make sure to adhere to Twitter's guidelines to avoid any issues.
+                </div>
+              </div>
+              <div class=" faq_item">
+                <h4 class="question" id="q10" onclick="toggleAnswer(10)">Contact Us or Ask a Question</h4>
+                <div class="answer" id="a10">
+                    If you have any further questions or need assistance, feel free to contact us by sending an email to <em>
+                    <a href="mailto:w0800287@myscc.ca">w0800287@myscc.ca</a></em>. We will be happy to help you!
+                </div>
+            </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <h1 class="chirp_logo"><i>Chirp.</i></h1>
+          <ul class="footer_list">
+            <li>
+              <a href="#" class="footer_link flink_1">
+                <img src="Assets/Twitter (Black).svg" alt="Twitter Logo" />
+              </a>
+            </li>
+            <li><a href="#" class="footer_link flink_2">Privacy Policy</a></li>
+            <li><a href="#" class="footer_link flink_3">Terms of Use</a></li>
+          </ul>
+        </div>
+      </footer>
+    
+</body>
+</html>
